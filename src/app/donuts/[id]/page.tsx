@@ -21,9 +21,8 @@ export default async function DonutById({ params }: { params: { id: string } }) 
         <p>Name: {donut?.name}</p>
         <p>Pic: <img src={donut.photo} width={'80px'} height={'80px'} /></p>
         <p>Calories: {donut?.calories}</p>
-        <p>Possible Extra Toppings: 
-            <ul>{donut?.extras?.map(extra => <li>{extra}</li>)}</ul>
-        </p>
+        <p>Possible Extra Toppings:</p>
+        <ul>{donut?.extras?.map(extra => <li>{extra}</li>)}</ul>
     </>
     )
 }
